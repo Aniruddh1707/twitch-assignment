@@ -9,7 +9,7 @@ require 'twitch.php';
 $provider = new TwitchProvider([
     'clientId'                => 'nmhtpm541g3et40o6bq8ks8zvaukl5',     // The client ID assigned when you created your application
     'clientSecret'            => 'p3csbgo6u8ekti6ukkqz5m7hlortob', // The client secret assigned when you created your application
-    'redirectUri'             => 'http://localhost/twitch/home.php',  // Your redirect URL you specified when you created your application
+    'redirectUri'             => 'https://twitch-assignment.herokuapp.com/home.php',  // Your redirect URL you specified when you created your application
     'grant_type'                  => 'client_credentials',  // The scopes you would like to request,
 ]);
 // If we don't have an authorization code then get one
