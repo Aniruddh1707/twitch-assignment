@@ -20,7 +20,7 @@ $url = 'https://api.twitch.tv/kraken/channels/'.$_POST['streamer_name'].'/videos
 $json_array = json_decode(file_get_contents_curl($url), true);
 if(!empty($json_array) && !isset($json_array['status'])){
 	foreach($json_array['videos'] as $key => $val){
-		$html.='<div class="col-md-4" style="margin-bottom:5px;"><div class="media">';
+		$html.='<div class="col-md-4" style="margin-bottom:5px;"><div class="media1">';
 		$html.='<iframe src="https://player.twitch.tv/?channel='.$val['channel']['name'].'" frameborder="0" allowfullscreen="true" scrolling="no" height="250" width="330"></iframe></div></div>';
 	}
 }else{

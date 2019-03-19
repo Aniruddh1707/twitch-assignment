@@ -13,7 +13,9 @@ $(window).on('load', function() {
 
 jQuery(document).ready(function($) {
 
-	setTimeout(function(){ getinitialStream() }, 3000);
+	if($('#hdn_streamerName').val() != ''){
+			setTimeout(function(){ getinitialStream() }, 3000);
+	}
     $('.btnStreamer').on('click',function(){
 		var streamer_name = $('#streamer_name').val();
 		$.ajax({
@@ -31,6 +33,18 @@ jQuery(document).ready(function($) {
 				$('#spinner-wrapper').hide();
 			},
 		});
+	});
+	
+	$('.btnSetFav').on('click',function(){
+		var streamer_name = $('#streamer_name').val();
+		if($('#streamer_name').val() == ''){
+			alert('Please search streamer to set favourite.');
+			return false;
+		}
+		var video = "<iframe src='https://player.twitch.tv/?channel="+streamer_name+"' frameborder='0' allowfullscreen='true' scrolling='no' height='378' width='500'></iframe>";
+		var chat = "<iframe src='https://www.twitch.tv/embed/"+streamer_name+"/chat' frameborder='0' scrolling='no' height='500' width='350'></iframe>";
+		$('.media').html(video);
+		$('.suggestions').html(chat);
 	});
 });
 

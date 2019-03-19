@@ -37,12 +37,7 @@ $json_array = json_decode(file_get_contents_curl($url), true);
 					<?php } } ?>
 				</div><!--profile card ends-->
 				<ul class="nav-news-feed">
-				  <li><i class="icon ion-ios-paper"></i><div><a href="newsfeed.html">My Newsfeed</a></div></li>
-				  <li><i class="icon ion-ios-people"></i><div><a href="newsfeed-people-nearby.html">People Nearby</a></div></li>
-				  <li><i class="icon ion-ios-people-outline"></i><div><a href="newsfeed-friends.html">Friends</a></div></li>
-				  <li><i class="icon ion-chatboxes"></i><div><a href="newsfeed-messages.html">Messages</a></div></li>
-				  <li><i class="icon ion-images"></i><div><a href="newsfeed-images.html">Images</a></div></li>
-				  <li><i class="icon ion-ios-videocam"></i><div><a href="logout.php">Logout</a></div></li>
+				  <li><div><a href="logout.php"><button class="btn btn-primary">Logout</button></a></div></li>
 				</ul><!--news-feed links ends-->
 			</div>
 			<div class="col-md-6">
@@ -51,11 +46,14 @@ $json_array = json_decode(file_get_contents_curl($url), true);
             	</div>
             	<div class="row">
 					<p>&nbsp;</p>
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<input class="form-control" placeholder="Search Streamer Name" type="text" id="streamer_name">
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<button class="btn btn-primary btnStreamer">Search Streamer</button>
+					</div>
+					<div class="col-md-3">
+						<button class="btn btn-primary btnSetFav">Set As Favourite</button>
 					</div>
 				</div>
             </div>
@@ -95,6 +93,4 @@ $json_array = json_decode(file_get_contents_curl($url), true);
     <script src="js/script.js"></script>
     
   </body>
-
-<!-- Mirrored from thunder-team.com/friend-finder/newsfeed-videos.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Jul 2018 14:15:26 GMT -->
 </html>
