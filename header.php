@@ -1,5 +1,6 @@
 <head>
 	<title> Twitch Demo | Aniruddhsinh </title>
+	<meta name="description" content="PHP">
 	<!-- Stylesheets
 	================================================= -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
