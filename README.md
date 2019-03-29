@@ -49,7 +49,8 @@ Build a web application that helps its audience to see their favorite streamer's
 ### Technologies Used
 * PHP
 * JQuery
-* HTML, CSS3
+* HTML
+* CSS3
 * Heroku
 ***
 
